@@ -1,16 +1,15 @@
-# This is a sample Python script.
+import streamlit as st
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+col1, col2 = st.columns(2)
 
+with col1:
+    st.image("images/photo.png")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+with col2:
+    st.title("My name is Jorge Alberto")
+    content = """ I am a computer systems engineer,
+        I know how to code in different programming languages, among them are
+        PHP, Java, Python, and C#. I like learning more about the different
+        programming languages.
+    """
+    st.info(content)
