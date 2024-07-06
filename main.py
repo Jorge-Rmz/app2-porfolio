@@ -13,3 +13,6 @@ with col2:
         programming languages.
     """
     st.info(content)
+
+
+st.write("Below you can find some of the apps. I have built in Python. Feel free to contact me! ")
